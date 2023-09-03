@@ -1,19 +1,16 @@
-function convertTypesToHtml(pokemonTypes){
-    return pokemonTypes.map((tSlot)=> `<li class="type">${tSlot.type.name}</li>` )
-}
+
 
 function convertToHtml(pokemon){
-    const POK_IMG = pokemon.sprites.other.dream_world.front_default
-    return `
-    <li class="pokemon">
-    <span class="number">#${pokemon.order}</span>
-    <span class="name">${pokemon.name}</span>
-    <div class="detail">
-      <ol class="types">
-        ${convertTypesToHtml(pokemon.types).join('')}
-      </ol>
-      <img src=${POK_IMG} alt="${pokemon.name}">
-    </div>
-  </li>
-    `
+  return `
+  <li class="pokemon ${pokemon.type}">
+  <span class="number">#${pokemon.number}</span>
+  <span class="name">${pokemon.name}</span>
+  <div class="detail">
+    <ol class="types">
+      ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+    </ol>
+    <img src=${pokemon.photo} alt="${pokemon.name}">
+  </div>
+</li>
+  `
 }

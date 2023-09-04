@@ -2,7 +2,7 @@
 
 function convertToHtml(pokemon){
   return `
-  <li class="pokemon ${pokemon.type}">
+  <li class="pokemon ${pokemon.type} pokemon-item" data-id="${pokemon.number}" >
   <span class="number">#${pokemon.number}</span>
   <span class="name">${pokemon.name}</span>
   <div class="detail">
@@ -14,3 +14,5 @@ function convertToHtml(pokemon){
 </li>
   `
 }
+
+

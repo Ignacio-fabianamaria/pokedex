@@ -11,6 +11,7 @@ function loadPokemons(offset, limit ){
         });
 }
 
+
 loadPokemons(offset, limit )
 
 loadButton.addEventListener('click', ()=> {
@@ -24,5 +25,7 @@ loadButton.addEventListener('click', ()=> {
         loadPokemons(offset, limit )
     }
 })
+
+
 
     

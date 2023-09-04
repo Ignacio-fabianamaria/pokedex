@@ -22,17 +22,20 @@
 
 <body>
   <section class="content">
-    <h1>Pokedex</h1>
-    <ol id="pokemonList" class="pokemons"></ol>
-    <div class="pagination">
-      <button id="loadMore" type="button">
-        Load more...
-      </button>
-    </div>
+    <h1>Pokemon Details</h1>
+    <div id="pokemonDetails">
+        <p class="pokemon-number"></p>
+        <p class="pokemon-name"></p>
+        <p class="pokemon-type"></p>
+        <p class="pokemon-ability"></p>
+        <p class="pokemon-height"></p>
+        <p class="pokemon-weight"></p>
+        <img class="pokemon-image" src="" alt="">
+      </div>
     
   </section>
+  <script src="/assets/js/poke_details.js"></script>
   <script src="/assets/js/pokemon_model.js"></script>
-  <script src="/assets/js/convert_toHtml.js"></script>
   <script src="/assets/js/pokemon_api.js"></script>
-  <script src="/assets/js/main.js"></script>
+  
 </body>

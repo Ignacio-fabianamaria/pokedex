@@ -16,9 +16,18 @@ function convertPokeApiToPokeModel(pokeDetail) {
   pokemon.abilities = abilities
   pokemon.ability = ability
 
+  const stats = pokeDetail.stats.map((stat)=> stat.base_stat)
+  const [hp, attack, defense] = stats
+
+  pokemon.stats = stats
+  pokemon.hp = hp
+  pokemon.attack = attack
+  pokemon.defense = defense
+
   pokemon.category = pokeDetail.category
   pokemon.height = pokeDetail.height
   pokemon.weight = pokeDetail.weight
+  pokemon.gender = pokeDetail.gender
   pokemon.photo = pokeDetail.sprites.other.dream_world.front_default
 
   return pokemon

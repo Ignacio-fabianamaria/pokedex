@@ -26,6 +26,21 @@ loadButton.addEventListener('click', ()=> {
     }
 })
 
+document.addEventListener('DOMContentLoaded', function () {
+    const pokemonList = document.getElementById('pokemonList');
+  
+    pokemonList.addEventListener('click', (event) => {
+      if (listItem) {
+        const pokemonId = listItem.getAttribute('data-id');
+        if (pokemonId) {
+          window.location.href = `details.html?id=${pokemonId}`;
+        }
+      }
+    });
+  
+    // Resto do seu código aqui...
+  });
+
 
 
     

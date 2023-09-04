@@ -6,9 +6,11 @@ class Pokemon{
     photo;
     height;
     weight;
-    category;
+    hp;
+    attack;
+    defense;
     ability;
-    gender;
+    
 
 }
 

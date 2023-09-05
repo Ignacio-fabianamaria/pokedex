@@ -6,26 +6,17 @@ Uma aplicação simples de Pokédex que lista todos os Pokémon disponíveis atr
 
 ![pokedetails](pokedetails.png)
 
-## Demonstração
-
-Inserir link para uma demonstração ao vivo ou GIF da aplicação em funcionamento.
-
 ## Funcionalidades
 
 - Lista de todos os Pokémon disponíveis.
 - Detalhes individuais de cada Pokémon.
-- Adicione qualquer outra funcionalidade relevante.
-
-## Pré-requisitos
-
-- Navegador da web moderno que suporte HTML, CSS e JavaScript.
 
 ## Instalação
 
 1. Clone este repositório:
 
 ```
-git clone https://github.com/seu-usuario/pokedex.git
+git clone https://github.com/Ignacio-fabianamaria/pokedex
 
 ```
 2. Navegue até o diretório do projeto:

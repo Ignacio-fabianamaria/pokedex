@@ -71,6 +71,30 @@
 
 }
 
+#pokemonDetails {
+    border-radius: 2rem;
+    color: #fff;
+    display: flex;
+    font-size: 1.5rem;
+    justify-content:space-around;
+    align-items: center;
+    padding: 3rem;
+    text-transform: capitalize;
+}
+
+.pokemon-number{
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+.pokemon-image{
+    width: 25rem;
+}
+
+a{
+    text-decoration: none;
+}
+
 @media screen and (min-width: 380px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;

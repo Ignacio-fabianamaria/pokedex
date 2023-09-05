@@ -23,9 +23,9 @@ document.addEventListener('DOMContentLoaded', function () {
     // Chame a função getPokemons da sua API para obter os detalhes do Pokémon com o ID especificado
     pokemonApi.getDetails({ url: `https://pokeapi.co/api/v2/pokemon/${pokemonId}/` })
       .then((pokemon) => {     
-        console.log('li aqui');  
-
-        pokemonNumber.textContent = `#${pokemon.number}`;
+        
+        pokemonDetails.className =  pokemon.type
+        pokemonNumber.textContent = `#00${pokemon.number}`;
         pokemonName.textContent = pokemon.name;
         pokemonType.textContent = (`Type: ${pokemon.types.join(' / ')}`);
         pokemonImage.src = pokemon.photo;

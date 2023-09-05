@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const pokemonList = document.getElementById('pokemonList');
   
     pokemonList.addEventListener('click', (event) => {
+      const listItem = event.target.closest('li')
       if (listItem) {
         const pokemonId = listItem.getAttribute('data-id');
         if (pokemonId) {
@@ -38,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   
-    // Resto do seu código aqui...
   });
 
 

@@ -73,22 +73,20 @@
 
 #pokemonDetails {
     border-radius: 2rem;
+    width: 100%;
     color: #fff;
-    display: flex;
-    font-size: 1.5rem;
-    justify-content:space-around;
-    align-items: center;
-    padding: 3rem;
+    text-align: center;
+    padding: .3rem;
     text-transform: capitalize;
 }
 
 .pokemon-number{
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: 900;
 }
 
 .pokemon-image{
-    width: 25rem;
+   width: 20%;
 }
 
 a{
@@ -99,6 +97,7 @@ a{
     .pokemons {
         grid-template-columns: 1fr 1fr;
     }
+    
 }
 
 @media screen and (min-width: 576px) {
